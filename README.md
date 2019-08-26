@@ -66,4 +66,4 @@
 
 双端队列在Python中也没有默认提供，需要我们自定义实现。[linearcollection.py](linearcollection.py)演示了中使用顺序表实现双端队列。
 
-
+关于栈和队列的更多内容，请参阅 https://colin-chang.site/python/datastructure/stackqueue.html
