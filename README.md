@@ -48,7 +48,7 @@ Python中`list`和`tuple`两种类型均采用顺序表的实现。`tuple`是不
 
 `list`内存使用策略如下。在建立空表(或者很小的表)时，系统直接申请8个元素的存储区；在执行插入操作(`insert`或`append`)时，如果8个存储区满，以4倍倍增扩充，如存储区达到50000的阈值，则改用一倍倍增。
 
-> 关于顺序表更多内容，请参阅 https://colin-chang.site/python/datastructure/sequencelist.html
+> 关于顺序表更多内容，请参阅 https://python.colinchang.net/datastructure/sequencelist.html
 
 ## 2. 链表
 链表(linked list)是一种物理存储单元上非连续、非顺序的存储结构，数据元素的逻辑顺序是通过链表中的指针链接次序实现的。链表由一系列结点（链表中每一个元素称为结点）组成，结点可以在运行时动态生成。每个结点包括两个部分：一个是存储数据元素的数据域，另一个是存储下一个结点地址的指针域。
@@ -86,7 +86,7 @@ Python中`list`和`tuple`两种类型均采用顺序表的实现。`tuple`是不
 
 链表结构在不同的开发平台都有各自语言的版本实现，如链表在C#当中实现为`LinkedList<T>`，而Python并没有内建链表实现，需要我们自定义实现。[linkedlist.py](linklist.py)即是一种链表的自定义实现。
 
-> 关于链表更多内容，请参阅 https://colin-chang.site/python/datastructure/linkedlist.html
+> 关于链表更多内容，请参阅 https://python.colinchang.net/datastructure/linkedlist.html
 
 ## 3. 栈 / 队列
 ### 3.1 栈
@@ -116,7 +116,7 @@ Python中`list`和`tuple`两种类型均采用顺序表的实现。`tuple`是不
 
 双端队列在Python中也没有默认提供，需要我们自定义实现。[linearcollection.py](linearcollection.py)演示了中使用顺序表实现双端队列。
 
-> 关于栈和队列的更多内容，请参阅 https://colin-chang.site/python/datastructure/stackqueue.html
+> 关于栈和队列的更多内容，请参阅 https://python.colinchang.net/datastructure/stackqueue.html
 
 ## 4. 树
 ### 4.1 树
@@ -210,4 +210,4 @@ Python中`list`和`tuple`两种类型均采用顺序表的实现。`tuple`是不
 
 先序规则为根左右，首个节点`A`就是树的根节点，依此中序结果以`A`为界分为`HDIBJE`(左子树)和`FCG`(右子树)。先序第二个节点`B`为左子树节点`HDIBJE`的根节点，以`B`为界分为`HDI`(左子树)和`JE`(右子树)。依此类推，逐层确定根节点，最终分组小于等于2时，每组一个元素，根节点左侧为左树，右侧为右树，这样就可以确定如[上图](#cbt)所示的二叉树。
 
-> 关于树结构的更多内容，请参阅 https://colin-chang.site/python/datastructure/tree.html
+> 关于树结构的更多内容，请参阅 https://python.colinchang.net/datastructure/tree.html
